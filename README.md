@@ -24,10 +24,7 @@ Aplikasi CatCare di-deploy pada lingkungan server VPS produksi dengan spesifikas
 ## 🌐 Informasi Tautan Sistem (Live Links)
 
 Seluruh sistem telah dideploy di dalam Virtual Private Server (VPS) dan dapat diakses melalui tautan publik aman berikut:
-* **Aplikasi Web (CatCare):** [https://canmie.my.id](https://canmie.my.id) *(Proses migrasi dari [http://canmie.my.id:9876](http://canmie.my.id:9876) via Nginx Reverse Proxy)*
-* **Dashboard Monitoring (Uptime Kuma):** [http://canmie.my.id:3001](http://canmie.my.id:3001)
-
----
+* **Aplikasi Web (CatCare):** [https://canmie.my.id]
 
 ## 🏗️ Diagram Arsitektur Sistem (Workflow)
 
