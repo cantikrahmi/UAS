@@ -20,9 +20,7 @@ jobs:
           username: ${{secrets.USER }}   # Username root (disembunyikan)
           key: ${{secrets.SSH_PRIVATE_KEY }}     # SSH Private Key lo (disembunyikan)
           port: 22
-          script: |
-            
-            cd /home/cantikrahmi/UAS
+          script: cd /home/cantikrahmi/UAS
             
             
             git pull origin main
@@ -31,4 +29,5 @@ jobs:
             docker compose down
             
             
+          
             docker compose up -d --build
