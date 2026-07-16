@@ -6,14 +6,14 @@ services:
     build: .
     container_name: cat-adoption
     ports:
-      - "8090:80" # <-- JATAH PORT WEB UTAMA MEREKA! (Nembak port 80 internal container)
+      - "9876:80"
     restart: always
 
   uptime-kuma:
     image: louislam/uptime-kuma:1
     container_name: monitoring_cat_adoption
     ports:
-      - "3012:3001" # <-- JATAH PORT MONITORING UPTIME KUMA MEREKA!
+      - "3001:3001"
     volumes:
       - uptime-kuma-cat-data:/app/data
     restart: always
