@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     image: uas-web-website:latest
-    build: ./html
+    build: .
     container_name: cat-adoption
     ports:
       - "9876:80"
