@@ -21,9 +21,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          script: |
-        cd ~/UAS-cantikrahmi-Webdeploy
-        git reset --hard origin/main
-        git pull origin main
-        docker compose down
-        docker compose up -d
+          cd /home/cantikrahmi/UAS
+          git pull origin main
+          docker compose down
+          docker compose up -d --build
