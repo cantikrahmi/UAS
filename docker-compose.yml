@@ -13,7 +13,7 @@ services:
     image: louislam/uptime-kuma:1
     container_name: monitoring_cat_adoption
     ports:
-      - "8888:3001"
+      - "9877:3001"
     volumes:
       - uptime-kuma-cat-data:/app/data
     restart: always
