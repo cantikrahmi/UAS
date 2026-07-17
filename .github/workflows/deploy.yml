@@ -1,27 +1,5 @@
-name: Deploy UAS Website
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
-
-    - name: Deploy via SSH
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 22
-        script: |
+script: |
           cd /home/cantikrahmi/UAS
           git pull origin main
-          docker compose down
+          docker compose down --remove-orphans
           docker compose up -d --build
