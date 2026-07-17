@@ -19,7 +19,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 9876
+        port: 22
         script: |
           cd /home/cantikrahmi/UAS
           git pull origin main
