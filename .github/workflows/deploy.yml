@@ -16,9 +16,9 @@ jobs:
     - name: Deploy via SSH
       uses: appleboy/ssh-action@master
       with:
-        HOST: ${{ secrets.HOST }}
-        USER: ${{ secrets.USER }}
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
           cd /home/cantikrahmi/UAS
